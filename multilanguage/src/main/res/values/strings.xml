@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MultiLanguage</string>
+    <string name="my_name">My name is</string>
+    <string name="my_age">My age is</string>
+
+    <string name="phone_language">Phone language is (%s)</string>
+</resources>

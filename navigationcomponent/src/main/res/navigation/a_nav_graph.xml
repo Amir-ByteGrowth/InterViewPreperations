@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/a_nav_graph"
+    app:startDestination="@id/b">
+    <fragment
+        android:id="@+id/b"
+        android:name="com.example.navigationcomponent.ui.fragmentb.FragmentB">
+        <action
+            android:id="@+id/actcion_ab"
+            app:destination="@id/c" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/c"
+        android:name="com.example.navigationcomponent.ui.fragmentc.FragmentC">
+
+    </fragment>
+
+<!--    <viewModel android:name="com.example.navigationcomponent.MyNavGraphViewModel" />-->
+</navigation>

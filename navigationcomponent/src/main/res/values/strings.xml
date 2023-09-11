@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">NavigationComponent</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragmenta">A Hello blank fragment</string>
+
+    <string name="hello_blank_fragmentb">B Hello blank fragment</string>
+    <string name="hello_blank_fragmentc">C Hello blank fragment</string>
+    <string name="hello_blank_fragmentd">D Hello blank fragment</string>
+</resources>

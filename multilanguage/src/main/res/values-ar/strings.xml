@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="my_name">اسمي هو</string>
+    <string name="my_age">عمري</string>
+    <string name="phone_language">لغة الهاتف هي (%s)</string>
+</resources>
