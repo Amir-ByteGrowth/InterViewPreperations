@@ -26,7 +26,17 @@ class MainActivity : AppCompatActivity() {
 //
 //        SingletonClass.showToast(applicationContext)
 
-        mainMethod()
+//        mainMethod()
+//    NotificationFactory.createNotification("sms").notifyUser()
+//    NotificationFactory.createNotification("email").notifyUser()
+//    NotificationFactory.createNotification("call").notifyUser()
 
+        var airTicketInIndiaTimeAndPrice:AirTicketInIndiaTimeAndPrice=AirIndiaTimeAndPrice()
+        var unitedAirPriceAndTimeInIndia:AirTicketInIndiaTimeAndPrice=UnitedAirPriceAndTimeInIndia()
+
+        airTicketInIndiaTimeAndPrice.showTimeInIndia()
+        airTicketInIndiaTimeAndPrice.showPriceInINR()
+        unitedAirPriceAndTimeInIndia.showTimeInIndia()
+        unitedAirPriceAndTimeInIndia.showPriceInINR()
     }
 }
