@@ -53,38 +53,7 @@ class FragmentA : Fragment() {
         Log.d("FragmentLifeCycle", "OnCreateView")
 
         var view = inflater.inflate(R.layout.fragment_a, container, false)
-        view.findViewById<Button>(R.id.click).setOnClickListener {
-            replaceFragment()
-            Toast.makeText(requireContext(), "Clicked", Toast.LENGTH_SHORT).show()
-        }
-        var list = arrayListOf(
-            DataClass("Title1", "Description kjdfnjkdf kdjfnsdjkfs ksdjfnskd\n kjfnsdjkf"),
-            DataClass("Title2", "Description kjdfnjkdf kdjfnsdjkfs ksdjfnskd\n kjfnsdjkf"),
-            DataClass("Title3", "Description kjdfnjkdf kdjfnsdjkfs ksdjfnskd\n kjfnsdjkf"),
-            DataClass("Title4", "Description kjdfnjkdf kdjfnsdjkfs ksdjfnskd\n kjfnsdjkf"),
-            DataClass("Title5", "Description kjdfnjkdf kdjfnsdjkfs ksdjfnskd\n kjfnsdjkf"),
-            DataClass("Title6", "Description kjdfnjkdf kdjfnsdjkfs ksdjfnskd\n kjfnsdjkf"),
-            DataClass("Title7", "Description kjdfnjkdf kdjfnsdjkfs ksdjfnskd\n kjfnsdjkf"),
-            DataClass("Title8", "Description kjdfnjkdf kdjfnsdjkfs ksdjfnskd\n kjfnsdjkf"),
-            DataClass("Title9", "Description kjdfnjkdf kdjfnsdjkfs ksdjfnskd\n kjfnsdjkf"),
-            DataClass("Title10", "Description kjdfnjkdf kdjfnsdjkfs ksdjfnskd\n kjfnsdjkf"),
-            DataClass("Title11", "Description kjdfnjkdf kdjfnsdjkfs ksdjfnskd\n kjfnsdjkf"),
-            DataClass("Title12", "Description kjdfnjkdf kdjfnsdjkfs ksdjfnskd\n kjfnsdjkf"),
-            DataClass("Title13", "Description kjdfnjkdf kdjfnsdjkfs ksdjfnskd\n kjfnsdjkf"),
-            DataClass("Title14", "Description kjdfnjkdf kdjfnsdjkfs ksdjfnskd\n kjfnsdjkf"),
-            DataClass("Title15", "Description kjdfnjkdf kdjfnsdjkfs ksdjfnskd\n kjfnsdjkf"),
-            DataClass("Title16", "Description kjdfnjkdf kdjfnsdjkfs ksdjfnskd\n kjfnsdjkf"),
-            DataClass("Title17", "Description kjdfnjkdf kdjfnsdjkfs ksdjfnskd\n kjfnsdjkf"),
-            DataClass("Title18", "Description kjdfnjkdf kdjfnsdjkfs ksdjfnskd\n kjfnsdjkf"),
-            DataClass("Title19", "Description kjdfnjkdf kdjfnsdjkfs ksdjfnskd\n kjfnsdjkf"),
-        )
 
-        var adapter = WalletRecyclerAdapter(requireContext(), list)
-       val recyclerView= view.findViewById<RecyclerView>(R.id.rectangles)
-        val snapHelper: SnapHelper = LinearSnapHelper()
-        
-        snapHelper.attachToRecyclerView(recyclerView)
-        recyclerView.adapter=adapter
         return view
     }
 
@@ -119,6 +88,38 @@ class FragmentA : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         Log.d("FragmentLifeCycle", "OnViewCreated")
+        view.findViewById<Button>(R.id.click).setOnClickListener {
+            replaceFragment()
+            Toast.makeText(requireContext(), "Clicked", Toast.LENGTH_SHORT).show()
+        }
+        var list = arrayListOf(
+            DataClass("Title1", "Description kjdfnjkdf kdjfnsdjkfs ksdjfnskd\n kjfnsdjkf"),
+            DataClass("Title2", "Description kjdfnjkdf kdjfnsdjkfs ksdjfnskd\n kjfnsdjkf"),
+            DataClass("Title3", "Description kjdfnjkdf kdjfnsdjkfs ksdjfnskd\n kjfnsdjkf"),
+            DataClass("Title4", "Description kjdfnjkdf kdjfnsdjkfs ksdjfnskd\n kjfnsdjkf"),
+            DataClass("Title5", "Description kjdfnjkdf kdjfnsdjkfs ksdjfnskd\n kjfnsdjkf"),
+            DataClass("Title6", "Description kjdfnjkdf kdjfnsdjkfs ksdjfnskd\n kjfnsdjkf"),
+            DataClass("Title7", "Description kjdfnjkdf kdjfnsdjkfs ksdjfnskd\n kjfnsdjkf"),
+            DataClass("Title8", "Description kjdfnjkdf kdjfnsdjkfs ksdjfnskd\n kjfnsdjkf"),
+            DataClass("Title9", "Description kjdfnjkdf kdjfnsdjkfs ksdjfnskd\n kjfnsdjkf"),
+            DataClass("Title10", "Description kjdfnjkdf kdjfnsdjkfs ksdjfnskd\n kjfnsdjkf"),
+            DataClass("Title11", "Description kjdfnjkdf kdjfnsdjkfs ksdjfnskd\n kjfnsdjkf"),
+            DataClass("Title12", "Description kjdfnjkdf kdjfnsdjkfs ksdjfnskd\n kjfnsdjkf"),
+            DataClass("Title13", "Description kjdfnjkdf kdjfnsdjkfs ksdjfnskd\n kjfnsdjkf"),
+            DataClass("Title14", "Description kjdfnjkdf kdjfnsdjkfs ksdjfnskd\n kjfnsdjkf"),
+            DataClass("Title15", "Description kjdfnjkdf kdjfnsdjkfs ksdjfnskd\n kjfnsdjkf"),
+            DataClass("Title16", "Description kjdfnjkdf kdjfnsdjkfs ksdjfnskd\n kjfnsdjkf"),
+            DataClass("Title17", "Description kjdfnjkdf kdjfnsdjkfs ksdjfnskd\n kjfnsdjkf"),
+            DataClass("Title18", "Description kjdfnjkdf kdjfnsdjkfs ksdjfnskd\n kjfnsdjkf"),
+            DataClass("Title19", "Description kjdfnjkdf kdjfnsdjkfs ksdjfnskd\n kjfnsdjkf"),
+        )
+
+        var adapter = WalletRecyclerAdapter(requireContext(), list)
+        val recyclerView= view.findViewById<RecyclerView>(R.id.rectangles)
+        val snapHelper: SnapHelper = LinearSnapHelper()
+
+        snapHelper.attachToRecyclerView(recyclerView)
+        recyclerView.adapter=adapter
     }
 
 
