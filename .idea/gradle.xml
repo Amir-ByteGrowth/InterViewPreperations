@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/contentprovidea" />
+            <option value="$PROJECT_DIR$/contentproviderb" />
+            <option value="$PROJECT_DIR$/coroutineflows" />
+            <option value="$PROJECT_DIR$/dependencyinjection" />
+            <option value="$PROJECT_DIR$/designpattren" />
+            <option value="$PROJECT_DIR$/functionsandclasses" />
+            <option value="$PROJECT_DIR$/jobschedular" />
+            <option value="$PROJECT_DIR$/lifecycle" />
+            <option value="$PROJECT_DIR$/memorymanagement" />
+            <option value="$PROJECT_DIR$/multilanguage" />
+            <option value="$PROJECT_DIR$/navigationcomponent" />
+            <option value="$PROJECT_DIR$/product_flavor" />
+            <option value="$PROJECT_DIR$/proguardrules" />
+            <option value="$PROJECT_DIR$/recyclerviewimpl" />
+            <option value="$PROJECT_DIR$/securelystoringcredentials" />
+            <option value="$PROJECT_DIR$/shortcutforandroidstudio" />
+            <option value="$PROJECT_DIR$/solidprinciples" />
+            <option value="$PROJECT_DIR$/sslpinning" />
+            <option value="$PROJECT_DIR$/threadhandlerasynchservice" />
+            <option value="$PROJECT_DIR$/trianglebutton" />
+            <option value="$PROJECT_DIR$/usefullextentionfunctions" />
+            <option value="$PROJECT_DIR$/workmanager" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

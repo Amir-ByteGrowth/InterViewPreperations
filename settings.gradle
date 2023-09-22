@@ -1,0 +1,38 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "InterViewPreperations"
+include ':app'
+include ':threadhandlerasynchservice'
+include ':functionsandclasses'
+include ':designpattren'
+include ':solidprinciples'
+include ':coroutineflows'
+include ':product_flavor'
+include ':lifecycle'
+include ':multilanguage'
+include ':trianglebutton'
+include ':proguardrules'
+include ':dependencyinjection'
+include ':navigationcomponent'
+include ':sslpinning'
+include ':securelystoringcredentials'
+include ':shortcutforandroidstudio'
+include ':usefullextentionfunctions'
+include ':memorymanagement'
+include ':recyclerviewimpl'
+include ':jobschedular'
+include ':workmanager'
+include ':contentprovidea'
+include ':contentproviderb'
