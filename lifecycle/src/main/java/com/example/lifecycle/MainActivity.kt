@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         Log.d("LifeCycle","OnCreate")
 //        startActivity(Intent(this@MainActivity,ActivityA::class.java))
 //        finish()
-        replaceFragment()
+//        replaceFragment()
     }
 
     fun replaceFragment() {
@@ -31,6 +31,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onSaveInstanceState(outState: Bundle, outPersistentState: PersistableBundle) {
         super.onSaveInstanceState(outState, outPersistentState)
+        Log.d("LifeCycle","OnSavedInstanceState")
     }
 
     override fun onRestoreInstanceState(
@@ -38,6 +39,7 @@ class MainActivity : AppCompatActivity() {
         persistentState: PersistableBundle?
     ) {
         super.onRestoreInstanceState(savedInstanceState, persistentState)
+        Log.d("LifeCycle","OnRestoreState")
     }
 
 
