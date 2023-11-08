@@ -1,10 +1,11 @@
 package com.example.designpattren
 
 import android.os.Bundle
-import android.util.Log
-import androidx.appcompat.app.AlertDialog
+import android.widget.Button
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.example.designpattren.dependencyinjectpattern.mainMethod
+import com.example.designpattren.decoratorpattern.practice1.UserNameValidator
+import com.example.designpattren.decoratorpattern.practice1.UserRepositoryImpl
 
 class MainActivity : AppCompatActivity() {
     var TAG = "DesignPattern"
@@ -31,12 +32,35 @@ class MainActivity : AppCompatActivity() {
 //    NotificationFactory.createNotification("email").notifyUser()
 //    NotificationFactory.createNotification("call").notifyUser()
 
-        var airTicketInIndiaTimeAndPrice:AirTicketInIndiaTimeAndPrice=AirIndiaTimeAndPrice()
-        var unitedAirPriceAndTimeInIndia:AirTicketInIndiaTimeAndPrice=UnitedAirPriceAndTimeInIndia()
+        var airTicketInIndiaTimeAndPrice: AirTicketInIndiaTimeAndPrice = AirIndiaTimeAndPrice()
+        var unitedAirPriceAndTimeInIndia: AirTicketInIndiaTimeAndPrice =
+            UnitedAirPriceAndTimeInIndia()
 
-        airTicketInIndiaTimeAndPrice.showTimeInIndia()
-        airTicketInIndiaTimeAndPrice.showPriceInINR()
-        unitedAirPriceAndTimeInIndia.showTimeInIndia()
-        unitedAirPriceAndTimeInIndia.showPriceInINR()
+//        airTicketInIndiaTimeAndPrice.showTimeInIndia()
+//        airTicketInIndiaTimeAndPrice.showPriceInINR()
+//        unitedAirPriceAndTimeInIndia.showTimeInIndia()
+//        unitedAirPriceAndTimeInIndia.showPriceInINR()
+
+        var userName = "superman"
+        val userRepository = UserRepositoryImpl()
+        val userValidator = UserNameValidator(userRepository)
+
+
+        findViewById<Button>(R.id.btnSet).setOnClickListener {
+          userValidator.setUserName("amir", "javeed")
+            userName = "amir"
+        }
+
+        findViewById<Button>(R.id.btnShow).setOnClickListener {
+            Toast.makeText(
+                applicationContext,
+                userValidator.getUserName(userName),
+                Toast.LENGTH_SHORT
+            ).show()
+        }
+
+
     }
+
+
 }
